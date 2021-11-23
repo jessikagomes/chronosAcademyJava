@@ -9,6 +9,11 @@ public class Plataforma {
 	private int qtdAssinantes;
 	
 	
+	public Plataforma() {
+		super();
+	}
+
+
 	public Plataforma(String nome, String url, double valor, int qtdAssinantes) {
 		super();
 		this.nome = nome;
