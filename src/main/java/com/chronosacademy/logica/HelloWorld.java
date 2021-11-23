@@ -1,24 +1,39 @@
 package com.chronosacademy.logica;
 
 public class HelloWorld {
-
-	static String hello;
 	
-	public static void main(String[] args) {
-		
-		System.out.println();
-		
-		
+	private String hello;
+	private int numero;
+	
+	public HelloWorld() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
 
-	public static String getHello() {
+	public HelloWorld(String hello, int numero) {
+		this.hello = hello;
+		this.numero = numero;
+	}
+	
+	public HelloWorld(int numero) {
+		this.numero = numero;
+	}
+
+	public String getHello() {
 		return hello;
 	}
 
-	public static void setHello(String hello) {
-		HelloWorld.hello = hello;
+	public void setHello(String hello) {
+		this.hello = hello;
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
 	}
 	
-
 
 }
