@@ -11,5 +11,11 @@ class FilmeTest {
 		Filme filme = new Filme("Divertidamente", 1.45, "livre");
 		assertEquals("Divertidamente", filme.getNome());
 	}
+	
+	@Test
+	void testInstanciaVazia() {
+		Filme filme = new Filme();
+		assertEquals(null, filme.getClassificacao());
+	}
 
 }

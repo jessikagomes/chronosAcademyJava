@@ -1,5 +1,8 @@
 package com.chronosacademy.findMovies;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Plataforma {
 	
 	private String nome;
@@ -7,6 +10,7 @@ public class Plataforma {
 	private boolean ativo = true;
 	private double valor;
 	private int qtdAssinantes;
+	private List<Filme> filmes = new ArrayList<Filme>();
 	
 	
 	public Plataforma() {
@@ -70,6 +74,16 @@ public class Plataforma {
 
 	public void setQtdAssinantes(int qtdAssinantes) {
 		this.qtdAssinantes = qtdAssinantes;
+	}
+
+
+	public List<Filme> getFilmes() {
+		return filmes;
+	}
+
+
+	public void setFilmes(List<Filme> filmes) {
+		this.filmes = filmes;
 	}
 	
 	
